@@ -6,7 +6,7 @@ import {PlaceNames} from "../types/placeTypes";
 const BurgerNav = () => {
 
     const [ open, setOpen ] = useState<boolean>(false);
-    let bodyStyleObj = document.body;
+    const bodyStyleObj = document.body;
     useMemo(()=> open
             ? bodyStyleObj.classList.add("blocked")
             : (bodyStyleObj.classList.add("scrollable"),bodyStyleObj.classList.remove("blocked"))
