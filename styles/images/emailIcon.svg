@@ -1,0 +1,13 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 58" width="60" height="58">
+	<title>Contact</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #5863f8 } 
+		.shp1 { fill: none;stroke: #ffffff;stroke-linecap:round;stroke-width: 2 } 
+	</style>
+	<g id="Contact">
+		<path id="Ellipse 28" class="shp0" d="M30 58C13.69 58 0.5 45.04 0.5 29C0.5 12.96 13.69 0 30 0C46.31 0 59.5 12.96 59.5 29C59.5 45.04 46.31 58 30 58Z" />
+		<path id="Path 25" class="shp1" d="M23.6 23L36.44 23C37.32 23 38.04 23.72 38.04 24.6L38.04 34.23C38.04 35.11 37.32 35.83 36.44 35.83L23.6 35.83C22.72 35.83 22 35.11 22 34.23L22 24.6C22 23.72 22.72 23 23.6 23Z" />
+		<path id="Path 26" class="shp1" d="M38.04 24.6L30.02 30.22L22 24.6" />
+	</g>
+</svg>

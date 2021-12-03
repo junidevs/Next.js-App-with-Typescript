@@ -1,8 +1,16 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { Provider } from 'react-redux';
+import type { AppProps  } from 'next/app';
+import { store } from '../store/store';
+import Header from '../components/header'
+import '../styles/Header.scss';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const CustomApp = ({ Component, pageProps }: AppProps) => {
+  return (
+      <Provider store={store}>
+          <Header />
+        <Component {...pageProps} />
+      </Provider>
+  );
 }
 
-export default MyApp
+export default CustomApp;

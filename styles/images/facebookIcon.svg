@@ -1,0 +1,18 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36">
+	<title>Contact</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #3b5998 } 
+		.shp1 { fill: #ffffff } 
+	</style>
+	<g id="Contact">
+		<g id="Footer">
+			<g id="Group 43">
+				<g id="001-facebook">
+					<path id="Ellipse 15" class="shp0" d="M17.5 35C7.82 35 0 27.18 0 17.5C0 7.82 7.82 0 17.5 0C27.18 0 35 7.82 35 17.5C35 27.18 27.18 35 17.5 35Z" />
+					<path id="Path 16" class="shp1" d="M21.88 18.19L18.77 18.19L18.77 29.58L14.06 29.58L14.06 18.19L11.82 18.19L11.82 14.19L14.06 14.19L14.06 11.6C14.06 9.75 14.94 6.85 18.81 6.85L22.3 6.86L22.3 10.75L19.77 10.75C19.35 10.75 18.77 10.95 18.77 11.84L18.77 14.19L22.29 14.19L21.88 18.19Z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
