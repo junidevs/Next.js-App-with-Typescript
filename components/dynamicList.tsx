@@ -4,10 +4,10 @@ interface Props {
 }
 
 // instead of default Props in parent component we can declare double ?? to avoid problems with map on undefined / null array
-const DynamicList = ( { names }:any) => {
+const DynamicList = ( { names,setOpen }:any) => {
     return(
         <>
-            {Object.keys(names ?? []).map((name:string) => <Link href={`/${name}`} key={name}>{names[name] ?? ''}</Link>)}
+            {Object.keys(names ?? []).map((name:string) => <div key={name} onClick={() => setOpen(false)}><Link href={`/${name}`}>{names[name] ?? ''}</Link></div>)}
         </>
     );         }
 

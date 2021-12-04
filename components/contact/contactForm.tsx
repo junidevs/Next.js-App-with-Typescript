@@ -1,4 +1,5 @@
-import type { NextPage } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
+import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form';
 // exception with next 12 https://stackoverflow.com/questions/69792558/react-hook-form-build-problem-when-upgrading-nextjs-to-version-12
 import { yupResolver } from '@hookform/resolvers/yup/dist/yup';
@@ -11,13 +12,22 @@ interface Props{
     path:string;
 }
 const ContactForm: NextPage<Props> = ({ path }) => {
-
+    const router = useRouter()
+    // errors object would be usefull to see something like a modal when we won't fill one of the fields for example :D
     const { register, handleSubmit, formState:{ errors } } = useForm({
         mode:'onChange',
         resolver: yupResolver(notifySchema)
     });
 
-    const onSubmit = (data:objectSchema<string>) => console.log(data);
+    const onSubmit = async (data:objectSchema<string>) => {
+        await fetch('/api/email', {
+            method: 'post',
+            body: JSON.stringify(data)
+        })
+    alert(`Email has been send with these data: ${JSON.stringify(data)}`)
+        router.push('/thank_you');
+    };
+
     return (
         <>
                 <div className="contactForm">
@@ -41,5 +51,10 @@ const ContactForm: NextPage<Props> = ({ path }) => {
         </>
     )
 }
+export const getStaticProps:GetStaticProps = async (ctx) => {
 
-export default ContactForm
+    return {
+        props: {}, // if message from mail would be saved in db we could get this via this function and pass as a prop to <ContactForm />
+    }
+}
+export default ContactForm;

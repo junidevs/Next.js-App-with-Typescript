@@ -2,7 +2,7 @@ import { Provider } from 'react-redux';
 import type { AppProps  } from 'next/app';
 import { store } from '../store/store';
 import Header from '../components/header'
-import '../styles/Header.scss';
+import '../styles/index.scss';
 
 const CustomApp = ({ Component, pageProps }: AppProps) => {
   return (

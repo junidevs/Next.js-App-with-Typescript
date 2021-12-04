@@ -19,10 +19,6 @@ export const pathValue = createSlice({
     },
 });
 
-export const {
-    updatePath,
-
-} = pathValue.actions;
-
+export const { updatePath } = pathValue.actions;
 export const pathValueReader = (state: RootState) => state.pathSlice.value;
 export default pathValue.reducer;

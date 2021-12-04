@@ -3,6 +3,9 @@ import Link from 'next/link';
 import facebookIcon from '../styles/images/facebookIcon.svg';
 import twitterIcon from '../styles/images/twitterIcon.svg';
 import googleIcon from '../styles/images/googleIcon.svg';
+import emailIcon from '../styles/images/emailIcon.svg';
+import phoneIcon from '../styles/images/phoneIcon.svg';
+import geoIcon from '../styles/images/geoIcon.svg';
 
 const PhotosContent: NextPage = () => {
 
@@ -69,9 +72,9 @@ const PhotosContent: NextPage = () => {
                     <div className="contactInfo_Container">
                         <h2>Contact Info</h2>
                         <ul>
-                            <li><img src={facebookIcon} alt={"icon"} />example@yahoo.com</li>
-                            <li><img src={facebookIcon} alt={"icon"} />+0 320 422 4254</li>
-                            <li><img src={facebookIcon} alt={"icon"} />Main Str Chicago Ilinois</li>
+                            <li><img src={emailIcon} alt={"icon"} />example@yahoo.com</li>
+                            <li><img src={phoneIcon} alt={"icon"} />+0 320 422 4254</li>
+                            <li><img src={geoIcon} alt={"icon"} />Main Str Chicago Ilinois</li>
                         </ul>
                     </div>
                     </div>

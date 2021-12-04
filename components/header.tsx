@@ -6,6 +6,7 @@ import BurgerNav from '../components/burgerNav';
 const Header = () => {
 
     const [isMobile, setIsMobile ] = useState<boolean>(false);
+    const [ open, setOpen ] = useState<boolean>(false);
 
     const checkResolution = () => {
         if (window.innerWidth < 1300) setIsMobile(true)
@@ -24,7 +25,7 @@ const Header = () => {
                     <h1>Zetta Hotels</h1>
                     {
                         isMobile
-                        ? <BurgerNav />
+                        ? <BurgerNav setOpen={setOpen} open={open} />
                         : <ul> <DynamicList names={PlaceNames} /> </ul>
                     }
                 </nav>

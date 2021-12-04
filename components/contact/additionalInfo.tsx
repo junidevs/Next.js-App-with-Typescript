@@ -18,16 +18,16 @@ const AdditionalInfo: NextPage = () => {
                 <ContactField
                     src={phoneIcon}
                     alt="emailIcon"
-                    mainText="Email"
-                    altTextOne="email@gmail.com"
-                    altTextTwo="emailemail@gmail.com"
+                    mainText="Phone"
+                    altTextOne="+0 320 422 4254"
+                    altTextTwo="+0 342 552 523"
                 />
                 <ContactField
                     src={geoIcon}
                     alt="emailIcon"
-                    mainText="Email"
-                    altTextOne="email@gmail.com"
-                    altTextTwo="emailemail@gmail.com"
+                    mainText="Location"
+                    altTextOne="Main Str Chicago Ilinois"
+                    altTextTwo="Main Street New York City"
                 />
             </div>
         </>
